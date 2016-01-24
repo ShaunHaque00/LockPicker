@@ -12,8 +12,7 @@ import SpriteKit
 
 
 class GameScene: SKScene {
-    
-    var background = SKAction.colorizeWithColor(UIColor.grayColor(), colorBlendFactor: 0.25, duration: 30.0)
+
     
     var circle = SKSpriteNode()
     var person = SKSpriteNode()
@@ -25,15 +24,37 @@ class GameScene: SKScene {
     var gamestarted = Bool()
     var movingclockwise = Bool()
     
+    var levellabel = UILabel()
+    
+    var currentlevel = Int()
+    var currentscore = Int()
+    var highlevel = Int()
+    
     
     override func didMoveToView(view: SKView) {
         
         loadview()
+        
+        let Defaults = NSUserDefaults.standardUserDefaults()
+        
+        if Defaults.integerForKey("highlevel") != 0 {
+            highlevel = Defaults.integerForKey("highlevel") as Int!
+            currentlevel = highlevel
+            currentscore = currentlevel
+            levellabel.text = "\(currentscore)"
+        }
+        
+        else{
+            
+            Defaults.setInteger(1, forKey: "highlevel")
+        }
+
 
     }
     
     func loadview() {
-        self.runAction(background)
+        backgroundColor = SKColor.grayColor()
+        movingclockwise = true
         
         person = SKSpriteNode(imageNamed: "person")
         person.size = CGSize(width: 40, height: 7)
@@ -46,6 +67,15 @@ class GameScene: SKScene {
         circle.size = CGSize(width: 300, height: 300)
         circle.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         self.addChild(circle)
+        
+        
+        levellabel = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 100))
+        levellabel.center = (self.view?.center)!
+        levellabel.text = "\(currentscore)"
+        levellabel.textAlignment = NSTextAlignment.Center
+        levellabel.font = UIFont.systemFontOfSize(60)
+        levellabel.textColor = SKColor.blueColor()
+        self.view?.addSubview(levellabel)
         
         adddot()
         
@@ -62,7 +92,7 @@ class GameScene: SKScene {
         }
         
         else if gamestarted == true {
-            dottouched()
+            
             if movingclockwise == true {
                 movecounterclockwise()
                 movingclockwise = false
@@ -73,6 +103,8 @@ class GameScene: SKScene {
                 moveclockwise()
                 movingclockwise = true
             }
+           
+            dottouched()
         }
 
         
@@ -97,7 +129,7 @@ class GameScene: SKScene {
         
         if movingclockwise == true {
             
-            let tempangle = CGFloat.random(min: rad + 1.0, max: rad + 2.5)
+            let tempangle = CGFloat.random(min: rad - 1.0, max: rad - 2.5)
             let path2 = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 130, startAngle: tempangle, endAngle: tempangle + CGFloat(M_PI * 4), clockwise: true)
             dot.position = path2.currentPoint
             
@@ -105,7 +137,7 @@ class GameScene: SKScene {
         
         else if movingclockwise == false {
             
-            let tempangle = CGFloat.random(min: rad - 1.0, max: rad - 2.5)
+            let tempangle = CGFloat.random(min: rad + 1.0, max: rad + 2.5)
             let path2 = UIBezierPath(arcCenter: CGPoint(x: self.frame.width/2, y: self.frame.height/2), radius: 130, startAngle: tempangle, endAngle: tempangle + CGFloat(M_PI * 4), clockwise: true)
             dot.position = path2.currentPoint
             
@@ -152,6 +184,14 @@ class GameScene: SKScene {
             dot.removeFromParent()
             adddot()
             intersected = false
+            
+            currentscore--
+            levellabel.text = "\(currentscore)"
+            if currentscore <= 0 {
+                
+                nextlevel()
+                
+            }
         }
         
         else if intersected == true{
@@ -162,6 +202,35 @@ class GameScene: SKScene {
         
     }
     
+    func nextlevel() {
+        currentlevel++
+        currentscore = currentlevel
+        levellabel.text = "\(currentscore)"
+        won()
+        if currentlevel > highlevel {
+            
+            highlevel = currentlevel
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setInteger(highlevel, forKey: "highlevel")
+        }
+        
+    }
+    
+    func won() {
+        
+        self.removeAllChildren()
+        
+        let action1 = SKAction.colorizeWithColor(UIColor.greenColor(), colorBlendFactor: 1.0, duration: 0.3)
+        
+        let action2 = SKAction.colorizeWithColor(UIColor.grayColor(), colorBlendFactor: 0.25, duration: 0.3)
+        self.scene?.runAction(SKAction.sequence([action1, action2]))
+        levellabel.removeFromSuperview()
+        intersected = false
+        gamestarted = false
+        self.loadview()
+    }
+    
+    
     func died() {
         
         self.removeAllChildren()
@@ -169,11 +238,12 @@ class GameScene: SKScene {
         let action1 = SKAction.colorizeWithColor(UIColor.redColor(), colorBlendFactor: 1.0, duration: 0.3)
         
         let action2 = SKAction.colorizeWithColor(UIColor.grayColor(), colorBlendFactor: 0.25, duration: 0.3)
-        
         self.scene?.runAction(SKAction.sequence([action1, action2]))
-        movingclockwise = false
+        levellabel.removeFromSuperview()
         intersected = false
         gamestarted = false
+        currentscore = currentlevel
+        self.loadview()
     }
    
     override func update(currentTime: CFTimeInterval) {
