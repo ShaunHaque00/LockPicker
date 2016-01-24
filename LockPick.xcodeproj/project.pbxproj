@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C8CD9F91C54831C0024455E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CD9F81C54831C0024455E /* AppDelegate.swift */; };
+		1C8CD9FB1C54831C0024455E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C8CD9FA1C54831C0024455E /* GameScene.sks */; };
+		1C8CD9FD1C54831C0024455E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CD9FC1C54831C0024455E /* GameScene.swift */; };
+		1C8CD9FF1C54831C0024455E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CD9FE1C54831C0024455E /* GameViewController.swift */; };
+		1C8CDA021C54831C0024455E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8CDA001C54831C0024455E /* Main.storyboard */; };
+		1C8CDA041C54831D0024455E /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8CDA031C54831D0024455E /* images.xcassets */; };
+		1C8CDA071C54831D0024455E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8CDA051C54831D0024455E /* LaunchScreen.storyboard */; };
+		1C8CDA121C54831D0024455E /* LockPickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDA111C54831D0024455E /* LockPickTests.swift */; };
+		1C8CDA1D1C54831D0024455E /* LockPickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDA1C1C54831D0024455E /* LockPickUITests.swift */; };
+		1C8CDA2B1C549B100024455E /* cgfloatextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDA2A1C549B100024455E /* cgfloatextension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C8CDA0E1C54831D0024455E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C8CD9ED1C54831C0024455E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8CD9F41C54831C0024455E;
+			remoteInfo = LockPick;
+		};
+		1C8CDA191C54831D0024455E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C8CD9ED1C54831C0024455E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8CD9F41C54831C0024455E;
+			remoteInfo = LockPick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C8CD9F51C54831C0024455E /* LockPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C8CD9F81C54831C0024455E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C8CD9FA1C54831C0024455E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		1C8CD9FC1C54831C0024455E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		1C8CD9FE1C54831C0024455E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1C8CDA011C54831C0024455E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C8CDA031C54831D0024455E /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		1C8CDA061C54831D0024455E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C8CDA081C54831D0024455E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8CDA0D1C54831D0024455E /* LockPickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockPickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C8CDA111C54831D0024455E /* LockPickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPickTests.swift; sourceTree = "<group>"; };
+		1C8CDA131C54831D0024455E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8CDA181C54831D0024455E /* LockPickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockPickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C8CDA1C1C54831D0024455E /* LockPickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPickUITests.swift; sourceTree = "<group>"; };
+		1C8CDA1E1C54831D0024455E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8CDA2A1C549B100024455E /* cgfloatextension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cgfloatextension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C8CD9F21C54831C0024455E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C8CDA0A1C54831D0024455E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C8CDA151C54831D0024455E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C8CD9EC1C54831C0024455E = {
+			isa = PBXGroup;
+			children = (
+				1C8CD9F71C54831C0024455E /* LockPick */,
+				1C8CDA101C54831D0024455E /* LockPickTests */,
+				1C8CDA1B1C54831D0024455E /* LockPickUITests */,
+				1C8CD9F61C54831C0024455E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C8CD9F61C54831C0024455E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C8CD9F51C54831C0024455E /* LockPick.app */,
+				1C8CDA0D1C54831D0024455E /* LockPickTests.xctest */,
+				1C8CDA181C54831D0024455E /* LockPickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C8CD9F71C54831C0024455E /* LockPick */ = {
+			isa = PBXGroup;
+			children = (
+				1C8CD9F81C54831C0024455E /* AppDelegate.swift */,
+				1C8CD9FA1C54831C0024455E /* GameScene.sks */,
+				1C8CD9FC1C54831C0024455E /* GameScene.swift */,
+				1C8CDA2A1C549B100024455E /* cgfloatextension.swift */,
+				1C8CD9FE1C54831C0024455E /* GameViewController.swift */,
+				1C8CDA001C54831C0024455E /* Main.storyboard */,
+				1C8CDA031C54831D0024455E /* images.xcassets */,
+				1C8CDA051C54831D0024455E /* LaunchScreen.storyboard */,
+				1C8CDA081C54831D0024455E /* Info.plist */,
+			);
+			path = LockPick;
+			sourceTree = "<group>";
+		};
+		1C8CDA101C54831D0024455E /* LockPickTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C8CDA111C54831D0024455E /* LockPickTests.swift */,
+				1C8CDA131C54831D0024455E /* Info.plist */,
+			);
+			path = LockPickTests;
+			sourceTree = "<group>";
+		};
+		1C8CDA1B1C54831D0024455E /* LockPickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C8CDA1C1C54831D0024455E /* LockPickUITests.swift */,
+				1C8CDA1E1C54831D0024455E /* Info.plist */,
+			);
+			path = LockPickUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C8CD9F41C54831C0024455E /* LockPick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C8CDA211C54831D0024455E /* Build configuration list for PBXNativeTarget "LockPick" */;
+			buildPhases = (
+				1C8CD9F11C54831C0024455E /* Sources */,
+				1C8CD9F21C54831C0024455E /* Frameworks */,
+				1C8CD9F31C54831C0024455E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockPick;
+			productName = LockPick;
+			productReference = 1C8CD9F51C54831C0024455E /* LockPick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C8CDA0C1C54831D0024455E /* LockPickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C8CDA241C54831D0024455E /* Build configuration list for PBXNativeTarget "LockPickTests" */;
+			buildPhases = (
+				1C8CDA091C54831D0024455E /* Sources */,
+				1C8CDA0A1C54831D0024455E /* Frameworks */,
+				1C8CDA0B1C54831D0024455E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C8CDA0F1C54831D0024455E /* PBXTargetDependency */,
+			);
+			name = LockPickTests;
+			productName = LockPickTests;
+			productReference = 1C8CDA0D1C54831D0024455E /* LockPickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C8CDA171C54831D0024455E /* LockPickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C8CDA271C54831D0024455E /* Build configuration list for PBXNativeTarget "LockPickUITests" */;
+			buildPhases = (
+				1C8CDA141C54831D0024455E /* Sources */,
+				1C8CDA151C54831D0024455E /* Frameworks */,
+				1C8CDA161C54831D0024455E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C8CDA1A1C54831D0024455E /* PBXTargetDependency */,
+			);
+			name = LockPickUITests;
+			productName = LockPickUITests;
+			productReference = 1C8CDA181C54831D0024455E /* LockPickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C8CD9ED1C54831C0024455E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "shaun Haque";
+				TargetAttributes = {
+					1C8CD9F41C54831C0024455E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QPUL3KUF52;
+					};
+					1C8CDA0C1C54831D0024455E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QPUL3KUF52;
+						TestTargetID = 1C8CD9F41C54831C0024455E;
+					};
+					1C8CDA171C54831D0024455E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QPUL3KUF52;
+						TestTargetID = 1C8CD9F41C54831C0024455E;
+					};
+				};
+			};
+			buildConfigurationList = 1C8CD9F01C54831C0024455E /* Build configuration list for PBXProject "LockPick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C8CD9EC1C54831C0024455E;
+			productRefGroup = 1C8CD9F61C54831C0024455E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C8CD9F41C54831C0024455E /* LockPick */,
+				1C8CDA0C1C54831D0024455E /* LockPickTests */,
+				1C8CDA171C54831D0024455E /* LockPickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C8CD9F31C54831C0024455E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8CD9FB1C54831C0024455E /* GameScene.sks in Resources */,
+				1C8CDA071C54831D0024455E /* LaunchScreen.storyboard in Resources */,
+				1C8CDA041C54831D0024455E /* images.xcassets in Resources */,
+				1C8CDA021C54831C0024455E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C8CDA0B1C54831D0024455E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C8CDA161C54831D0024455E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C8CD9F11C54831C0024455E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8CD9FD1C54831C0024455E /* GameScene.swift in Sources */,
+				1C8CD9FF1C54831C0024455E /* GameViewController.swift in Sources */,
+				1C8CDA2B1C549B100024455E /* cgfloatextension.swift in Sources */,
+				1C8CD9F91C54831C0024455E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C8CDA091C54831D0024455E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8CDA121C54831D0024455E /* LockPickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C8CDA141C54831D0024455E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8CDA1D1C54831D0024455E /* LockPickUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C8CDA0F1C54831D0024455E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C8CD9F41C54831C0024455E /* LockPick */;
+			targetProxy = 1C8CDA0E1C54831D0024455E /* PBXContainerItemProxy */;
+		};
+		1C8CDA1A1C54831D0024455E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C8CD9F41C54831C0024455E /* LockPick */;
+			targetProxy = 1C8CDA191C54831D0024455E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C8CDA001C54831C0024455E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C8CDA011C54831C0024455E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C8CDA051C54831D0024455E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C8CDA061C54831D0024455E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C8CDA1F1C54831D0024455E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C8CDA201C54831D0024455E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C8CDA221C54831D0024455E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LockPick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.shaunhaque.LockPick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C8CDA231C54831D0024455E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LockPick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.shaunhaque.LockPick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C8CDA251C54831D0024455E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = LockPickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.shaunhaque.LockPickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LockPick.app/LockPick";
+			};
+			name = Debug;
+		};
+		1C8CDA261C54831D0024455E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LockPickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.shaunhaque.LockPickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LockPick.app/LockPick";
+			};
+			name = Release;
+		};
+		1C8CDA281C54831D0024455E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = LockPickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.shaunhaque.LockPickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LockPick;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1C8CDA291C54831D0024455E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LockPickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.shaunhaque.LockPickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LockPick;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C8CD9F01C54831C0024455E /* Build configuration list for PBXProject "LockPick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C8CDA1F1C54831D0024455E /* Debug */,
+				1C8CDA201C54831D0024455E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C8CDA211C54831D0024455E /* Build configuration list for PBXNativeTarget "LockPick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C8CDA221C54831D0024455E /* Debug */,
+				1C8CDA231C54831D0024455E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C8CDA241C54831D0024455E /* Build configuration list for PBXNativeTarget "LockPickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C8CDA251C54831D0024455E /* Debug */,
+				1C8CDA261C54831D0024455E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C8CDA271C54831D0024455E /* Build configuration list for PBXNativeTarget "LockPickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C8CDA281C54831D0024455E /* Debug */,
+				1C8CDA291C54831D0024455E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C8CD9ED1C54831C0024455E /* Project object */;
+}
